@@ -105,7 +105,7 @@ export default () => {
         divEdit.innerHTML = `
         <button clase="confirm" id="id-confirm">Confirmar</button>
         `;
-        // Insere um elemento o elemento especificado(divEdit) na posição especificada
+        // Insere um elemento ao elemento especificado(divEdit) na posição especificada
         btnConfirm.insertAdjacentElement('beforebegin', divEdit);
 
         divEdit.addEventListener('click', () => {
@@ -118,7 +118,6 @@ export default () => {
 
       if (isUserPost) {
         btnDelete.addEventListener('click', async () => {
-          console.log('click delete ok');
           await deletePost(post.id);
           // eslint-disable-next-line no-use-before-define
           await readAndWritePost();

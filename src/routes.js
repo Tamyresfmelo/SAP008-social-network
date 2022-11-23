@@ -20,10 +20,12 @@ const screens = () => {
   }
 };
 
+// chama sempre a função screens quando muda a hash
 window.addEventListener('hashchange', () => {
   screens();
 });
 
+// chama a função screens quando carrega a pag
 window.addEventListener('load', () => {
   screens();
 });
